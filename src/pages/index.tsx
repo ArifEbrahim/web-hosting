@@ -1,4 +1,4 @@
-import { Link } from "react-router";
+import { Link } from 'react-router'
 import styles from './home.module.css'
 
 export default function Home() {
@@ -6,7 +6,9 @@ export default function Home() {
     <>
       <header className={styles.main_header}>
         <div>
-          <Link className={styles.main_header__brand} to="/">uHost</Link>
+          <Link className={styles.main_header__brand} to="/">
+            uHost
+          </Link>
         </div>
         <nav className={styles.main_nav}>
           <ul className={styles.main_nav__items}>
@@ -16,7 +18,9 @@ export default function Home() {
             <li className={styles.main_nav__item}>
               <Link to="/customers">Customers</Link>
             </li>
-            <li className={`${styles.main_nav__item} ${styles.main_nav__item__cta}`}>
+            <li
+              className={`${styles.main_nav__item} ${styles.main_nav__item__cta}`}
+            >
               <Link to="/start-hosting">Start Hosting</Link>
             </li>
           </ul>
@@ -27,7 +31,51 @@ export default function Home() {
       </section>
       <section>
         <h1 className={styles.section_title}>Chose your plan</h1>
-        <p>Make sure you get the most for your money!</p>
+        <div>
+          <article className={styles.plan}>
+            <h1 className={styles.plan__title}>FREE</h1>
+            <h2 className={styles.plan__price}>£0/month</h2>
+            <h3>For hobby projects or small teams.</h3>
+            <ul className={styles.plan__features}>
+              <li>1 Workspace</li>
+              <li>Unlimited Traffic</li>
+              <li>10GB Storage</li>
+              <li>Basic Support</li>
+            </ul>
+            <div>
+              <button>CHOOSE PLAN</button>
+            </div>
+          </article>
+          <article className={`${styles.plan} ${styles.plan__highlight}`}>
+            <h1 className={styles.plan__annotation}>RECOMMENDED</h1>
+            <h1 className={styles.plan__title}>PLUS</h1>
+            <h2 className={styles.plan__price}>£29/month</h2>
+            <h3>For ambitious projects.</h3>
+            <ul className={styles.plan__features}>
+              <li>5 Workspaces</li>
+              <li>Unlimited Traffic</li>
+              <li>100GB Storage</li>
+              <li>Plus Support</li>
+            </ul>
+            <div>
+              <button>CHOOSE PLAN</button>
+            </div>
+          </article>
+          <article className={styles.plan}>
+            <h1 className={styles.plan__title}>PREMIUM</h1>
+            <h2 className={styles.plan__price}>£99/month</h2>
+            <h3>Your enterprise solution.</h3>
+            <ul className={styles.plan__features}>
+              <li>10 Workspaces</li>
+              <li>Unlimited Traffic</li>
+              <li>Unlimited Storage</li>
+              <li>Priority Support</li>
+            </ul>
+            <div>
+              <button>CHOOSE PLAN</button>
+            </div>
+          </article>
+        </div>
       </section>
     </>
   )
