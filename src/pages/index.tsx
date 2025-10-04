@@ -30,7 +30,7 @@ export default function Home() {
         <h1>Get the freedom you deserve.</h1>
       </section>
       <section>
-        <h1 className={styles.section_title}>Chose your plan</h1>
+        <h1 className={styles.section_title}>Choose your plan</h1>
         <div>
           <article className={styles.plan}>
             <h1 className={styles.plan__title}>FREE</h1>
@@ -43,7 +43,7 @@ export default function Home() {
               <li>Basic Support</li>
             </ul>
             <div>
-              <button>CHOOSE PLAN</button>
+              <button className={styles.button}>CHOOSE PLAN</button>
             </div>
           </article>
           <article className={`${styles.plan} ${styles.plan__highlight}`}>
@@ -58,7 +58,7 @@ export default function Home() {
               <li>Plus Support</li>
             </ul>
             <div>
-              <button>CHOOSE PLAN</button>
+              <button className={styles.button}>CHOOSE PLAN</button>
             </div>
           </article>
           <article className={styles.plan}>
@@ -72,10 +72,35 @@ export default function Home() {
               <li>Priority Support</li>
             </ul>
             <div>
-              <button>CHOOSE PLAN</button>
+              <button className={styles.button}>CHOOSE PLAN</button>
             </div>
           </article>
         </div>
+      </section>
+      <section className={styles.key_features}>
+        <h1 className={styles.section_title}>
+          Many Good Reasons to Stick Around
+        </h1>
+        <ul className={styles.key_features__list}>
+          <li className={styles.key_feature}>
+            <div className={styles.key_feature__image}></div>
+            <p className={styles.key_feature__description}>
+              3,857,000 Trusting Customers
+            </p>
+          </li>
+          <li className={styles.key_feature}>
+            <div className={styles.key_feature__image}></div>
+            <p className={styles.key_feature__description}>
+              99.999% Uptime Guarantee
+            </p>
+          </li>
+          <li className={styles.key_feature}>
+            <div className={styles.key_feature__image}></div>
+            <p className={styles.key_feature__description}>
+              Lightning Fast CDN
+            </p>
+          </li>
+        </ul>
       </section>
     </>
   )
