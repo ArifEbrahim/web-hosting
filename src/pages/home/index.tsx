@@ -1,3 +1,4 @@
+import Button from '../../components/button'
 import styles from './home.module.css'
 
 export default function Home() {
@@ -20,7 +21,7 @@ export default function Home() {
               <li>Basic Support</li>
             </ul>
             <div>
-              <button className={styles.button}>CHOOSE PLAN</button>
+              <Button>CHOOSE PLAN</Button>
             </div>
           </article>
           <article className={`${styles.plan} ${styles.plan__highlight}`}>
@@ -35,7 +36,7 @@ export default function Home() {
               <li>Plus Support</li>
             </ul>
             <div>
-              <button className={styles.button}>CHOOSE PLAN</button>
+              <Button>CHOOSE PLAN</Button>
             </div>
           </article>
           <article className={styles.plan}>
@@ -49,7 +50,7 @@ export default function Home() {
               <li>Priority Support</li>
             </ul>
             <div>
-              <button className={styles.button}>CHOOSE PLAN</button>
+              <Button>CHOOSE PLAN</Button>
             </div>
           </article>
         </div>
